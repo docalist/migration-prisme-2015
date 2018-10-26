@@ -121,8 +121,7 @@ class MigrationPrisme2015 extends BaseTool
         // Vérifie qu'il n'y a pas déjà des posts de ce type
         $check = $this->getPostCount($newType);
         if ($check !== 0) {
-            echo "<p>Erreur : il y a déjà des posts de type '$newType' dans la table wp_posts</p>";
-            return;
+            echo "<p>Warning : il y a déjà des posts de type '$newType' dans la table wp_posts</p>";
         }
 
         // Ok, on peut convertir
