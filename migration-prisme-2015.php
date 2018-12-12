@@ -71,10 +71,10 @@ add_action('plugins_loaded', function () {
     // Pas de classe Plugin, on définit simplement les outils disponibles
     add_filter('docalist-tools', function (array $tools): array {
         return $tools + [
-            DeleteOldDclPosts::class,
-            MigrationPrisme2015::class,
-            ImportDocalistBiblioSettings::class,
-            DownloadPrismeCustomTables::class
+            'delete-old-dcl-posts' => DeleteOldDclPosts::class,
+            'migration-prisme-2015' => MigrationPrisme2015::class,
+            'import-docalist-biblio-settings' => ImportDocalistBiblioSettings::class,
+            'download-prisme-custom-tables' => DownloadPrismeCustomTables::class
         ];
     });
 });
