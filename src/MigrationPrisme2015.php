@@ -186,7 +186,7 @@ class MigrationPrisme2015 extends BaseTool
         }
 
         // Transfère le post dans la base fournie en paramètre
-        $newPost ['post_type'] = $database->postType();
+        $newPost ['post_type'] = $database->getPostType();
 
         // Retourne le post modifié
         return $newPost;
