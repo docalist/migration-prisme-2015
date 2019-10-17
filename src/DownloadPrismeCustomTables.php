@@ -38,7 +38,7 @@ class DownloadPrismeCustomTables extends BaseTool
      *
      * @var string
      */
-    const URL = 'http://www.documentation-sociale.org';
+    const URL = 'https://www.documentation-sociale.org';
 
     /**
      * URL complète de la table master.
